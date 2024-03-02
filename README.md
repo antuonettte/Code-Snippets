@@ -161,7 +161,7 @@ def save_to_csv(data, filename):
         writer.writerows(data)
 
 def main():
-    url = 'http://example.com' # Replace with the URL of the webpage you want to scrape
+    url = 'http://example.com' 
     soup = scrape_website(url)
     data = parse_data(soup)
     save_to_csv(data, 'output.csv')
@@ -180,7 +180,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { ThemeContext } from './ThemeContext';
 
-const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts'; // Replace with your API endpoint
+const API_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts';
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
